@@ -5,8 +5,6 @@ const { chromium } = require("playwright");
     headless: false,
   });
 
-  // YOUR CODE STARTS
-
   const context = await browser.newContext();
 
   const page = await context.newPage();
@@ -25,5 +23,5 @@ const { chromium } = require("playwright");
   } catch {
     console.log('Test failed or the username/password combination was unintentionally valid');
   }
-    // YOUR CODE ENDS
+  
 })();
